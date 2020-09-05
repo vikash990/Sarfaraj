@@ -1,7 +1,9 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
     <title>Deviktech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
             background-color: coral;
@@ -42,12 +44,16 @@
         }
         #content{
             min-height: 500px;
+            text-align:center;
+            margin-top:250px;
         }
         .one{
             color:green;
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 20px;
         }
         #two{
-            font-style: italic;
+            font-family: 'Hind Siliguri', sans-serif;
         }
         a{
             text-decoration: none;
@@ -62,6 +68,15 @@
         #name{
             background-color: coral;
         }
+        #float{
+            float:center;
+
+        }
+        @media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
     </style>
 
 </head>
@@ -73,12 +88,14 @@
             <a link href="#">About</a>
             <a link href="#">Contact</a>
         </div>
+
         <div id="flex2">
             <a link href="#">Login</a>
             <a link href="#">Sign Up</a>
         </div>
     </div>
     <div id="content">
+        <p id="float">Hi I am a boy</p>
     </div>
     <div id="footer">
         <div>
