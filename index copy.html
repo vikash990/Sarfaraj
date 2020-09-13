@@ -1,0 +1,41 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1 onclick="changehhText(this)">click on me</h1>
+    <h1 onmouseover="changeMe(this)" onmouseout="backAgain(this)"> i will change muself</h1>
+    <div id="new">
+        <p id="p1" >This is my first website </p>
+        <p id="p2">This is my second website </p>
+    </div>
+    <button onclick="addFunction()">Add something</button>
+    <button onclick="remove()">remove me</button>
+    <script>
+        function changehhText(id1) {
+            id1.innerHTML = "i am change"
+        }
+        function changeMe(id2) {
+            id2.innerHTML = "i am a boy"
+
+        }
+        function backAgain(id3) {
+            id3.innerHTML = "i change again"
+        }
+        function addFunction() {
+            var para = document.createElement("p");
+            var node = document.createTextNode("This is third para");
+            para.appendChild(node);
+
+            var element = document.getElementById("new");
+            element.appendChild(para)
+        }
+        function remove(){
+           var elem= document.getElementById("p1");
+           elem.remove();
+        }
+    </script>
+</body>
+
+</html>
